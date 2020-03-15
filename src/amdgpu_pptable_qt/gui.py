@@ -104,10 +104,18 @@ class MainWindow(QtWidgets.QMainWindow):
 
         toolbar = QtWidgets.QToolBar()
         toolbar.setToolButtonStyle(QtCore.Qt.ToolButtonTextBesideIcon)
-        toolbar.addAction(QtGui.QIcon.fromTheme('document-open'), "Load", self.open_dialog.show).setShortcuts(QtGui.QKeySequence.Open)
-        toolbar.addAction(QtGui.QIcon.fromTheme('document-save'), "Save", self.save_dialog.show).setShortcuts(QtGui.QKeySequence.Save)
-        toolbar.addAction(QtGui.QIcon.fromTheme('edit-undo'), "Revert", self.revert)
-        toolbar.addAction(QtGui.QIcon.fromTheme('view-refresh'), "Reparse", self.parse).setShortcuts(QtGui.QKeySequence.Refresh)
+        toolbar.addAction(
+            QtGui.QIcon.fromTheme('document-open'), "Load", self.open_dialog.show
+        ).setShortcuts(QtGui.QKeySequence.Open)
+        toolbar.addAction(
+            QtGui.QIcon.fromTheme('document-save'), "Save", self.save_dialog.show
+        ).setShortcuts(QtGui.QKeySequence.Save)
+        toolbar.addAction(
+            QtGui.QIcon.fromTheme('edit-undo'), "Revert", self.revert
+        )
+        toolbar.addAction(
+            QtGui.QIcon.fromTheme('view-refresh'), "Reparse", self.parse
+        ).setShortcuts(QtGui.QKeySequence.Refresh)
         self.addToolBar(toolbar)
 
     def update_modified_state(self):
