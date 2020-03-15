@@ -6,7 +6,7 @@ setuptools.setup(
     packages=setuptools.find_packages('src'),
     package_dir={'': 'src'},
     install_requires=[
-        'amdgpu-pptable @ https://github.com/amezin/powerplay-table-editor.git',
+        'amdgpu-pptable @ git+https://github.com/amezin/amdgpu-pptable.git',
         'PyQt5'
     ],
     setup_requires=['setuptools_scm', 'setuptools_scm_git_archive'],
