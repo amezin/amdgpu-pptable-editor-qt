@@ -1,3 +1,5 @@
+|flake8 lint badge|
+
 AMDGPU PowerPlay table editor
 =============================
 
@@ -38,3 +40,6 @@ $ env EDITOR=amdgpu-pptable-editor-qt sudoedit /sys/class/drm/card*/device/pp_ta
 
 .. Caution::
    You can completely screw up your card by modifying its pp_table.
+
+
+.. |flake8 lint badge| image:: https://github.com/amezin/amdgpu-pptable-editor-qt/workflows/flake8%20lint/badge.svg
