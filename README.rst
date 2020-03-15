@@ -43,3 +43,4 @@ $ env EDITOR=amdgpu-pptable-editor-qt sudoedit /sys/class/drm/card*/device/pp_ta
 
 
 .. |flake8 lint badge| image:: https://github.com/amezin/amdgpu-pptable-editor-qt/workflows/flake8%20lint/badge.svg
+   :target: https://github.com/amezin/amdgpu-pptable-editor-qt/actions?query=workflow%3A%22flake8+lint%22
