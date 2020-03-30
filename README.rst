@@ -21,6 +21,15 @@ On recent Debians/Ubuntus::
 $ sudo apt-get install python3-pyqt5 python3-pip git
 $ pip3 install --user git+https://github.com/amezin/amdgpu-pptable-editor-qt.git
 
+At least on current Debian Testing, installation fails with::
+
+  ERROR: Command errored out with exit status 1: /usr/bin/python3 /usr/share/python-wheels/pep517-0.7.0-py2.py3-none-any.whl/pep517/_in_process.py get_requires_for_build_wheel /tmp/tmpebufmefo Check the logs for full command output.
+
+In this case, add `--no-use-pep517` flag::
+
+$ sudo apt-get install python3-pyqt5 python3-pip git
+$ pip3 install --user --no-use-pep517 git+https://github.com/amezin/amdgpu-pptable-editor-qt.git
+
 Usage
 -----
 
